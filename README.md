@@ -53,6 +53,32 @@ Electronic waste, or e-waste, is one of the fastest-growing waste streams in the
 
 ---
 
+## IoT Integration — Smart Dustbin System
+
+EcoCycle CTG goes beyond a mobile app. The project includes a physical IoT-based Smart Dustbin system that works alongside the app to create a complete e-waste management solution for Chattogram City.
+
+### IoT System Architecture
+
+The IoT system connects physical smart dustbins to the EcoCycle CTG platform in real time. Sensors embedded in the dustbin monitor fill levels, detect the type of waste deposited, and transmit data to the cloud. This allows the app and city authorities to track bin status, dispatch collection when needed, and maintain an accurate picture of e-waste volume across the city.
+
+<div align="center">
+
+<img width="860" alt="EcoCycle CTG IoT System Architecture" src="https://github.com/user-attachments/assets/47426f85-f4a7-4b67-b3a0-911bab064b41" />
+
+</div>
+
+### Smart Dustbin
+
+The Smart Dustbin is a purpose-built physical unit designed for e-waste collection in public spaces, university campuses, and residential areas. It uses IoT sensors to detect when an item is deposited, identify whether it qualifies as electronic waste, and automatically update the EcoCycle CTG system. When the bin reaches capacity, a notification is triggered for collection by the city's recycling team.
+
+<div align="center">
+
+<img width="860" alt="EcoCycle CTG Smart Dustbin" src="https://github.com/user-attachments/assets/0310fc95-fb60-4daf-87a3-39d5a417400d" />
+
+</div>
+
+---
+
 ## Features
 
 ### Schedule E-Waste Pickup
@@ -96,6 +122,12 @@ Chooses pickup scheduling or finds nearest drop-off point
 AI assistant provides guidance and confirms next steps
       |
       v
+E-waste deposited in Smart Dustbin or collected at doorstep
+      |
+      v
+IoT system updates bin status and notifies collection team
+      |
+      v
 E-waste is collected and recycled responsibly
 ```
 
@@ -110,6 +142,8 @@ E-waste is collected and recycled responsibly
 | AI Backend | Google Gemini API |
 | Build System | Gradle (Kotlin DSL) |
 | IDE | Android Studio |
+| IoT Hardware | Smart Dustbin with embedded sensors |
+| IoT Connectivity | Cloud-connected real-time monitoring |
 
 ---
 
@@ -127,8 +161,8 @@ E-waste is collected and recycled responsibly
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ecocycle-ctg.git
-cd ecocycle-ctg
+git clone https://github.com/rahul-3613/EcoCycle-CTG-_-app.git
+cd EcoCycle-CTG-_-app
 ```
 
 2. Create a `.env` file in the project root and add your API key
@@ -155,10 +189,17 @@ signingConfig = signingConfigs.getByName("debugConfig")
 |---|---|
 | Presented by | Sociology Club, Premier University Chittagong |
 | Occasion | World Environment Day |
+| Competition Result | Champions out of 21 teams |
 | Target Area | Chattogram City Corporation |
-| Platform | Android |
+| Platform | Android + IoT |
 | AI Backend | Google Gemini API |
 | Primary Goal | Reduce e-waste environmental impact in Chattogram |
+
+---
+
+## App Demo
+
+[Watch Demo on Google Drive](https://drive.google.com/file/d/1I9MKUGeo9RCmD4KIQMGJLpRIlTI52HvP/view?usp=drive_link)
 
 ---
 
